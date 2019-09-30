@@ -1,13 +1,3 @@
 {
-    "presets": ["./tools/grommet-babel-preset-es2015", "@babel/preset-react"],
-    "plugins": [],
-    "env": {
-      "es6": {
-        "plugins": [
-          [
-            "transform-imports"
-          ]
-        ]
-      }
-    }
-  }
+  "presets": ["@babel/preset-react"]
+}

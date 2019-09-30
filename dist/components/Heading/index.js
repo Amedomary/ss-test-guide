@@ -1,19 +1,8 @@
-"use strict";
+import React from "react";
+import "./style.css";
 
-exports.__esModule = true;
-exports["default"] = void 0;
+const Heading = () => React.createElement("h1", {
+  className: "title"
+}, "Heading");
 
-var _react = _interopRequireDefault(require("react"));
-
-require("./style.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var Heading = function Heading() {
-  return _react["default"].createElement("h1", {
-    className: "title"
-  }, "Heading");
-};
-
-var _default = Heading;
-exports["default"] = _default;
+export default Heading;

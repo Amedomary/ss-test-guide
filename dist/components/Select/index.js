@@ -1,15 +1,5 @@
-"use strict";
+import React from 'react';
 
-exports.__esModule = true;
-exports["default"] = void 0;
+const Select = () => React.createElement("select", null);
 
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var Select = function Select() {
-  return _react["default"].createElement("select", null);
-};
-
-var _default = Select;
-exports["default"] = _default;
+export default Select;

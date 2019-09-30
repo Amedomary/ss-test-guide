@@ -1,15 +1,5 @@
-"use strict";
+import React from 'react';
 
-exports.__esModule = true;
-exports["default"] = void 0;
+const Menu = () => React.createElement("ul", null, React.createElement("li", null, "Menu"));
 
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var Menu = function Menu() {
-  return _react["default"].createElement("ul", null, _react["default"].createElement("li", null, "Menu"));
-};
-
-var _default = Menu;
-exports["default"] = _default;
+export default Menu;

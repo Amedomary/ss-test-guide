@@ -11,9 +11,9 @@
   "dependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "react-dom": "^16.10.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.2.1",

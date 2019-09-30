@@ -1,8 +1,8 @@
-import { withNaming  } from '@bem-react/classname';
+// import { withNaming  } from '@bem-react/classname';
 
-const cnBem = withNaming({ n: '', e: '__', m: '_', v: '_' });
+// const cnBem = withNaming({ n: '', e: '__', m: '_', v: '_' });
 
-export default cnBem;
+// export default cnBem;
 
 // cat() // Cat
 // cat({ size: 'm' }) // Cat Cat_size_m

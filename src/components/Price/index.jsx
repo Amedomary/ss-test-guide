@@ -1,18 +1,31 @@
 import React from 'react'
+import PropTypes from "prop-types";
+import "./Price.css";
 
 const rootClass = 'price';
 
 const Price = (props) => {
-    const { children } = props;
+    const { children, isBold } = props;
+    const isBoldClass = isBold ? 'bold': '';
+
     return (
-        <div className={rootClass}>
+        <div className={`${rootClass} ${isBoldClass}`}>
             {children}
         </div>
     )
 };
 
-export default Price;
-
+Price.propTypes = {
+    isBold: PropTypes.bool,
+    // instanceRef: PropTypes.func,
+    // className: PropTypes.string, ??
+    // style: PropTypes.object, ??
+    // size: PropTypes.oneOf(["s", "m", "l", "xl", "xxl"]),
+    // colorTheme: PropTypes.oneOf(["primary", "ghost-orange", "ghost-gray"]),
+    // icon: PropTypes.node,
+    // isDisabled: PropTypes.bool,
+    // isFoolWith: PropTypes.bool
+};
 
 // className	string	-
 // price	other	-	0
@@ -22,3 +35,5 @@ export default Price;
 // size	other	-	m
 // isBold	bool	-	false
 // direction	other	-	row
+
+export default Price;

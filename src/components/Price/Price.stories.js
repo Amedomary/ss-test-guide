@@ -8,7 +8,7 @@ export default {
 export const defaultExample = () => (
   <div className="row-gap">
     <Price> Стандартная цена</Price>
-    <Price> 399 рублей</Price>
+    <Price isBold> 399 рублей isBold</Price>
   </div>
 )
 

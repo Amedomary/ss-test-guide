@@ -4,7 +4,9 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel ./src --ignore '__tests__' --out-dir ./dist --copy-files"
+    "build": "babel ./src --ignore '__tests__' --out-dir ./dist --copy-files",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@babel/cli": "^7.6.2",
@@ -12,5 +14,12 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "babel-loader": "^8.0.6"
   }
 }

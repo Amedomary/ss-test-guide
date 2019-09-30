@@ -1,0 +1,6 @@
+
+@mixin focus {
+    &:focus:not(:hover) {
+        @content;
+    }
+}

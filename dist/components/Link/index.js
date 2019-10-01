@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Link.scss";
+import './Link.scss';
 import cnBem from "../global/bem";
 const bemClass = cnBem('link');
 

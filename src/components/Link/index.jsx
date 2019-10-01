@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Link.scss";
+import './Link.scss';
 import cnBem from "../global/bem"
 
 const bemClass = cnBem('link');
 
 const Link = props => {
     const {style, children, url, target, tabIndex, icon, hasBorder, borderStyle, color, title, instanceRef, isBold, isDisabled} = props;
-    
+
     const rootClass = bemClass({
         'color': color,
         'border': hasBorder,
@@ -41,7 +41,7 @@ Link.propTypes = {
     borderStyle: PropTypes.oneOf(["solid", "dotted", "dashed"]),
     isBold: PropTypes.bool
 };
-  
+
 Link.defaultProps = {
     color: "orange",
     url: "#",

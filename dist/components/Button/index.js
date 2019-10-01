@@ -1,30 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Button.css";
-import cnBem from "../global/bem"
-
+import cnBem from "../global/bem";
 const bemClass = cnBem('button');
 
 const Button = props => {
-  const { children, icon, size, colorTheme, isFoolWith, instanceRef, isDisabled } = props;
+  const {
+    children,
+    icon,
+    size,
+    colorTheme,
+    isFoolWith,
+    instanceRef,
+    isDisabled
+  } = props;
   const rootClass = bemClass({
     'size': size,
     'theme': colorTheme,
-    'full-width': isFoolWith,
+    'full-width': isFoolWith
   });
   const iconClass = bemClass('icon', {
-    'with-text': !!children,
-  })
-
-  // const rootClass = 'button';
+    'with-text': !!children
+  }); // const rootClass = 'button';
   // const iconClass = 'icon';
 
-  return (
-    <button className={rootClass} type="button" ref={instanceRef} disabled={isDisabled}>
-      { icon && <span className={iconClass}> {icon} </span> }
-      {children}
-    </button>
-  );
+  return React.createElement("button", {
+    className: rootClass,
+    type: "button",
+    ref: instanceRef,
+    disabled: isDisabled
+  }, icon && React.createElement("span", {
+    className: iconClass
+  }, " ", icon, " "), children);
 };
 
 Button.propTypes = {
@@ -37,7 +44,6 @@ Button.propTypes = {
   isDisabled: PropTypes.bool,
   isFoolWith: PropTypes.bool
 };
-
 Button.defaultProps = {
   // className: PropTypes.string,
   size: "l",
@@ -46,15 +52,11 @@ Button.defaultProps = {
   // icon: PropTypes.node,
   // isDisabled: false, ??
   isFoolWith: false,
-  isDisabled: false
-  // instanceRef: PropTypes.func,
+  isDisabled: false // instanceRef: PropTypes.func,
+
 };
-
 Button.displayName = "Button";
-
-export default Button;
-
-// порядок свойств
+export default Button; // порядок свойств
 // className
 // children
 // number, string

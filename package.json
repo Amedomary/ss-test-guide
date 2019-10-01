@@ -12,6 +12,8 @@
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
+    "@bem-react/classname": "^1.5.4",
+    "classnames": "^2.2.6",
     "react": "^16.9.0",
     "react-dom": "^16.10.1"
   },

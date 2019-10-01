@@ -6,5 +6,6 @@ import Text from "./Text";
 import TextArea from "./TextArea";
 import Button from "./Button";
 import Price from "./Price";
+import Link from "./Link";
 
-export { Heading, Input, Menu, Select, Text, TextArea, Button, Price };
+export { Heading, Input, Menu, Select, Text, TextArea, Button, Price, Link };

@@ -6,6 +6,7 @@ import TextArea from "./TextArea";
 import Button from "./Button";
 import Price from "./Price";
 import Link from "./Link";
+import Counter from "./Counter";
 
 export {
     Heading,
@@ -15,5 +16,6 @@ export {
     TextArea,
     Button,
     Price,
-    Link
+    Link,
+    Counter
 };

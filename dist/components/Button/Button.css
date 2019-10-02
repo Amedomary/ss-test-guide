@@ -6,10 +6,6 @@
 	font-size: 14px;
 	border: 1px solid transparent;
 	cursor: pointer;
-  /** States */
-  /** Mods bool*/
-  /** Mods */
-  /** Elements */;
 }
 
 .button:focus {
@@ -36,7 +32,7 @@
 	display: block;
 	flex: 1 1 auto;
 	width: 100%;
-	width: fill-available;
+	max-width: stretch;
 }
 
 .button_size_s {

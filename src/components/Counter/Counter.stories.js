@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter  from './index';
+import Demo from './demo';
 
 export default {
   title: 'Components|Counter'
@@ -7,8 +7,8 @@ export default {
 
 export const defaultExample = () => (
   <div className="row-gap">
-    <Counter />
-    <Counter />
+    <Demo />
+    <Demo />
   </div>
 )
 

@@ -15,7 +15,8 @@
     "@bem-react/classname": "^1.5.4",
     "classnames": "^2.2.6",
     "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "react-dom": "^16.10.1",
+    "what-input": "^5.2.6"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.2.1",

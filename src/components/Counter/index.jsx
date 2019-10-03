@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./Counter.scss";
-import cnBem from "../global/bem"
+import cnBem from "../global/bem";
+import 'what-input';
 
 const bemClass = cnBem('counter');
 

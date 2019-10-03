@@ -12,9 +12,9 @@ const Demo = props => {
   };
 
   return React.createElement(Counter, {
-    step: 2,
+    step: 1,
     minValue: 1,
-    maxValue: 10,
+    maxValue: 30,
     count: count,
     updateCount: updateCount
   });

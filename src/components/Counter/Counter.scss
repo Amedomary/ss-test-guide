@@ -36,11 +36,10 @@
         background: none;
         user-select: none;
         -webkit-appearance: none;
-        // font-weight: 600;
 
         @include focus {
             color: #000000;
-            // box-shadow: 0 0 1px 1px rgba(34, 117, 165, 0.5);
+            box-shadow: 0 0 1px 1px rgba(34, 117, 165, 0.5);
         }
 
         @include hover {

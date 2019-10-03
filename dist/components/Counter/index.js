@@ -14,39 +14,58 @@ const Counter = props => {
   } = props;
 
   const checkValue = value => {
+    value = Number(String(value).replace(/[\D]/gi, ''));
+
     if (value >= maxValue) {
-      console.log(maxValue);
       return maxValue;
     }
 
     if (value <= minValue) {
       return minValue;
     }
+
+    return value;
+  };
+
+  const decrement = value => {
+    return checkValue(value - step);
+  };
+
+  const increment = value => {
+    return checkValue(value + step);
   };
 
   return React.createElement("div", {
     className: bemClass()
   }, React.createElement("button", {
     className: bemClass('button'),
-    onClick: () => updateCount(prevCount => checkValue(prevCount - step)),
+    onClick: () => updateCount(prevCount => decrement(prevCount)),
     type: "button",
-    disabled: false
+    disabled: count <= minValue
   }, "-"), React.createElement("input", {
     className: bemClass('input'),
     value: count,
     type: "text",
     name: "name",
     id: "id",
-    onChange: event => updateCount(Number(event.target.value))
+    onChange: event => updateCount(checkValue(event.target.value))
   }), React.createElement("button", {
     className: bemClass('button'),
-    onClick: () => updateCount(prevCount => prevCount + step),
+    onClick: () => updateCount(prevCount => increment(prevCount)),
     type: "button",
-    disabled: false
+    disabled: count >= maxValue
   }, "+"));
 };
 
-Counter.propTypes = {};
-Counter.defaultProps = {};
+Counter.propTypes = {
+  count: PropTypes.number,
+  updateCount: PropTypes.func,
+  step: PropTypes.number,
+  minValue: PropTypes.number,
+  maxValue: PropTypes.number
+};
+Counter.defaultProps = {
+  count: 1
+};
 Counter.displayName = "Counter";
 export default Counter;

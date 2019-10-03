@@ -15,12 +15,20 @@
         background: none;
 
         -webkit-appearance: none;
+
+        @include focus {
+            border-bottom-color: $mainColor;
+        }
+
+        @include hover {
+            color: #000000;
+        }
     }
 
     &__button {
         width: 24px;
         height: 24px;
-        font-size: 15px;
+        font-size: 16px;
         cursor: pointer;
         color: #5d5d64;
         border: none;
@@ -30,11 +38,16 @@
         -webkit-appearance: none;
 
         @include focus {
-            outline: none;
-            background: rgba(255, 115, 0, .1);
+            color: #000000;
+            box-shadow: 0 0 1px 1px rgba(34, 117, 165, 0.5);
         }
+
         @include hover {
             color: #000000;
+        }
+
+        @include active {
+            color: $mainColor;
         }
 
         &[disabled] {

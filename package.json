@@ -9,15 +9,17 @@
     "build-storybook": "build-storybook",
     "login": "npm login",
     "patching": "npm version patch",
-    "publishing": "npm publish"
+    "publishing": "npm publish",
+    "np": "np"
   },
   "dependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
-    "@bem-react/classname": "^1.5.4",
+    "@bem-react/classname": "^1.5.6",
     "@storybook/addon-info": "^5.2.1",
     "classnames": "^2.2.6",
+    "np": "^5.1.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "what-input": "^5.2.6"

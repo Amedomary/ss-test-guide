@@ -1,25 +1,35 @@
 import React from 'react';
 import Button  from './index';
+import {action} from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
 
-export default {
-  title: 'Components|Button'
-};
 
-export const defaultExample = () => (
+// export default {
+//   title: 'Components|Button'
+// };
+
+storiesOf('Components|dsdsd', module)
+  .add('Default', () => (
+
+// export const defaultExample = () => (
   <div className="row-gap">
-    <Button> Стандартная кнопка </Button>
+    <Button onClick={action('Button-click')}> Стандартная кнопка </Button>
   </div>
-)
-
-export const sizeExample = () => (
-  <div className="row-gap">
-    <Button size="s">size s primary</Button>
-    <Button size="m">size m primary</Button>
-    <Button size="l">size l primary</Button>
-    <Button size="xl">size xl primary</Button>
-    <Button size="xxl">size xxl primary</Button>
-  </div>
+  )
+// )
 );
+
+// export const sizeExample = () => (
+//   .add('Default', () => (
+//   <div className="row-gap">
+//     <Button size="s">size s primary</Button>
+//     <Button size="m">size m primary</Button>
+//     <Button size="l">size l primary</Button>
+//     <Button size="xl">size xl primary</Button>
+//     <Button size="xxl">size xxl primary</Button>
+//   </div>
+//   )
+// ));
 
 export const colorThemeExample = () => (
   <div className="row-gap">
@@ -61,13 +71,13 @@ export const disabledExample = () => (
   </div>
 )
 
-defaultExample.story = {
-  name: 'Default'
-}
+// defaultExample.story = {
+//   name: 'Default'
+// }
 
-sizeExample.story = {
-  name: 'Size',
-};
+// sizeExample.story = {
+//   name: 'Size',
+// };
 
 colorThemeExample.story = {
   name: 'Color theme',

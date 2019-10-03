@@ -1,5 +1,8 @@
 import { configure, addDecorator } from "@storybook/react";
 import React from "react";
+import { withInfo } from '@storybook/addon-info';
+
+addDecorator(withInfo);
 
 // global storybook styled
 const storybokStyle = `

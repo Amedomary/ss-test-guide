@@ -16,6 +16,7 @@
     "@babel/core": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "@bem-react/classname": "^1.5.4",
+    "@storybook/addon-info": "^5.2.1",
     "classnames": "^2.2.6",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",

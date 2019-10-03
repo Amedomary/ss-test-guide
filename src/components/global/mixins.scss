@@ -4,10 +4,16 @@
         outline: none;
         @content;
     }
+}
 
-    // &:focus:not(:hover) {
-    //     @content;
-    // }
+@mixin focus-key {
+    &:focus {
+        outline: none;
+    }
+
+    [data-whatinput="keyboard"] &:focus {
+        @content;
+    }
 }
 
 @mixin hover {

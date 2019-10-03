@@ -37,7 +37,7 @@
         user-select: none;
         -webkit-appearance: none;
 
-        @include focus {
+        @include focus-key {
             color: #000000;
             box-shadow: 0 0 1px 1px rgba(34, 117, 165, 0.5);
         }

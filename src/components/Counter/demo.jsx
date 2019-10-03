@@ -13,7 +13,13 @@ const Demo = props => {
     }
 
     return (
-        <Counter count={ count } updateCount={ updateCount } />
+        <Counter
+            step={1}
+            minValue={1}
+            maxValue={30}
+            count={ count }
+            updateCount={ updateCount }
+        />
     );
 };
 

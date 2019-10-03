@@ -6,32 +6,64 @@ import cnBem from "../global/bem"
 const bemClass = cnBem('counter');
 
 const Counter = props => {
-    const { count, updateCount } = props;
-    const rootClass = bemClass();
-
-    console.log('RENERERERRE');
-
+    const { count, updateCount, step, minValue, maxValue } = props;
+    const checkValue = (value) => {
+        value = Number(String(value).replace(/[\D]/gi, ''));
+        if (value >= maxValue) {
+            return maxValue;
+        }
+        if (value <= minValue) {
+            return minValue;
+        }
+        return value;
+    }
+    const decrement = (value) => {
+        return checkValue(value - step);
+    }
+    const increment = (value) => {
+        return checkValue(value + step);
+    }
 
     return (
-        <div className={ rootClass }>
-            {/* <button onClick={changeDown} type="button">-</button>
-            <input type="text" name="name" id="id" onChange={(event) => setCount(event.target.value)}/>
-            <button onClick={changeUp} type="button">+</button>
-
-            <button onClick={() => setCount(2)}>Сбросить</button>
-            <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
-            <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button> */}
-            Счёт: {count}
-
-            <button onClick={() => {updateCount(prevCount => prevCount + 1)}}> Сделать 200 </button>
+        <div className={ bemClass() }>
+            <button
+                className={ bemClass('button') }
+                onClick={ () => updateCount(prevCount => decrement(prevCount)) }
+                type="button"
+                disabled={ count <= minValue }
+            >
+                -
+            </button>
+            <input
+                className={ bemClass('input') }
+                value={ count }
+                type="text"
+                name="name"
+                id="id"
+                onChange={ (event) => updateCount(checkValue(event.target.value)) }
+            />
+            <button
+                className={ bemClass('button') }
+                onClick={ () => updateCount(prevCount => increment(prevCount)) }
+                type="button"
+                disabled={ count >= maxValue }
+            >
+                +
+            </button>
         </div>
     );
 };
 
 Counter.propTypes = {
+    count: PropTypes.number,
+    updateCount: PropTypes.func,
+    step: PropTypes.number,
+    minValue: PropTypes.number,
+    maxValue: PropTypes.number,
 };
 
 Counter.defaultProps = {
+    count: 1
 };
 
 Counter.displayName = "Counter";

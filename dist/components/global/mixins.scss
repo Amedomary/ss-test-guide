@@ -1,6 +1,12 @@
 
 @mixin focus {
-    &:focus:not(:hover) {
+    &:focus {
+        @content;
+    }
+}
+
+@mixin hover {
+    &:hover:not([disabled]) {
         @content;
     }
 }

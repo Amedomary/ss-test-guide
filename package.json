@@ -6,7 +6,10 @@
   "scripts": {
     "build": "babel ./src --ignore '__tests__' --out-dir ./dist --copy-files",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "login": "npm login",
+    "patch": "npm version patch",
+    "publish": "npm publish"
   },
   "dependencies": {
     "@babel/cli": "^7.6.2",

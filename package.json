@@ -9,8 +9,7 @@
     "build-storybook": "build-storybook",
     "login": "npm login",
     "patching": "npm version patch",
-    "publishing": "npm publish",
-    "np": "np"
+    "publishing": "npm publish"
   },
   "dependencies": {
     "@babel/cli": "^7.6.2",

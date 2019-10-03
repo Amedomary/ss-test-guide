@@ -923,10 +923,10 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.0.tgz#860ce718b0b73f4009e153541faff2cb6b85d047"
   integrity sha512-4Th98KlMHr5+JkxfcoDT//6vY8vM+iSPrLNpHhRyLx2CFYi8e2RfqPLdpbnpo0Q5lQC5hNB79yes07zb02fvCw==
 
-"@bem-react/classname@^1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@bem-react/classname/-/classname-1.5.4.tgz#31ada1be0515229cc89c2627c59ddc4e511f6a6d"
-  integrity sha512-8tzl6qVi+lAe8FBPOlPrMhfpCvniWG9dY/lKMXhAqqC/FttNTcKkkLdXH3XDGm8bfJ0WcHil9qG0LlMNVrUd7g==
+"@bem-react/classname@^1.5.6":
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/@bem-react/classname/-/classname-1.5.6.tgz#28ae425ef981d92075a19ed6a1b03375d3635605"
+  integrity sha512-Fq8dzuJHUKAUt/FtBM04ibzN1iahSo7FJCfdqG9mxiu5K/LdZgFCeaRgF68vv0jmr9+WtR1h0IMz1vypQgnigQ==
 
 "@emotion/cache@^10.0.17", "@emotion/cache@^10.0.9":
   version "10.0.19"

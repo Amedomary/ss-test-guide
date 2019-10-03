@@ -8,8 +8,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "login": "npm login",
-    "patch": "npm version patch",
-    "publish": "npm publish"
+    "patching": "npm version patch",
+    "publishing": "npm publish"
   },
   "dependencies": {
     "@babel/cli": "^7.6.2",

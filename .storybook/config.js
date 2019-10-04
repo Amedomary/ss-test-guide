@@ -2,13 +2,11 @@ import { configure, addDecorator } from "@storybook/react";
 import React from "react";
 import { withInfo } from '@storybook/addon-info';
 import { addReadme } from 'storybook-readme';
-import { withKnobs } from '@storybook/addon-knobs';
 
-addDecorator(addReadme);
 addDecorator(withInfo({
   header: true, // Global configuration for the info addon across all of your stories.
 }));
-addDecorator(withKnobs);
+addDecorator(addReadme);
 
 // global storybook styled
 const storybokStyle = `

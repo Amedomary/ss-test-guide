@@ -1,14 +1,23 @@
 import React from 'react';
+import { withInfo } from '@storybook/addon-info';
 import Button  from './index';
 import {action} from '@storybook/addon-actions';
-import { storiesOf } from '@storybook/react';
-
+import { storiesOf, addDecorator } from '@storybook/react';
+import md from './Button.md';
 
 // export default {
 //   title: 'Components|Button'
 // };
 
-storiesOf('Components|dsdsd', module)
+storiesOf('Components|btntntnt', module)
+  .addParameters({
+    readme: {
+      // Show readme before story
+      content: `### ButtonReadme`,
+      // Show readme at the addons panel
+      sidebar: md,
+    },
+  })
   .add('Default', () => (
 
 // export const defaultExample = () => (

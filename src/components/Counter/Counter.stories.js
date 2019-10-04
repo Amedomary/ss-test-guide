@@ -1,18 +1,21 @@
 import React from 'react';
-// import { storiesOf } from '@storybook/react';
+import { storiesOf } from '@storybook/react';
 import Demo from './demo';
+import md from './Counter.md';
 
-export default {
-  title: 'Components|Counter'
-};
+const stories = storiesOf('Components|Counter', module);
 
-export const defaultExample = () => (
-  <div className="row-gap">
-    <Demo />
-    <Demo />
-  </div>
-)
-
-defaultExample.story = {
-  name: 'Default'
-}
+stories.addParameters({
+  readme: {
+    // Show readme before story
+    content: `# Button`,
+    // Show readme at the addons panel
+    sidebar: md,
+  },
+})
+  .add('Default', () => (
+    <div className="row-gap">
+      <Demo />
+      <Demo />
+    </div>
+  ));

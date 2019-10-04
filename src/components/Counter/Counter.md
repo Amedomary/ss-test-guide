@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import cnBem from "../global/bem"
-import { Counter } from "../index"
+### Пример компонента родителя
 
+```jsx
 const Demo = () => {
     const [count, setCount] = useState(1);
-
+    
     const updateCount = (value) => {
         setCount(value)
     }
@@ -24,3 +22,4 @@ const Demo = () => {
 Demo.displayName = "Demo";
 
 export default Demo;
+```
